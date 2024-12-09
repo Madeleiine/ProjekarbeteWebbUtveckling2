@@ -8,7 +8,39 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    
+    <header>
+        <h1>Maträttsgenerator</h1>
+        <p>Skapa egna recept och få nya ideér till middagen</p>
+
+        <main>
+            <section>
+                <h2>Slumpa en maträtt</h2>
+                <button id="genereraMaträtt">Generera maträtt </button>
+                <p id="slumpaMat"></p>
+            </section>
+
+            <section>
+                <h2>Lägg till nytt recept</h2>
+                <form id="receptForm">
+                    <label for="matNamn">Recept namn:</label>
+                    <input type="text" id="matNamn" required>
+
+                    <label for="ingredienser">Ingredienser:</label>
+                    <textarea id="ingredienser" required></textarea>
+
+                    <button type="submit">Lägg till</button>
+                </form>
+            </section>
+
+            <section>
+                <h2>Alla Recept</h2>
+                <ul id="receptLista"></ul>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Maträttsgenerator </p>
+        </footer>
+    </header>
     <script src="script.js"></script>
 </body>
 </html>
