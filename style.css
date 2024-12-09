@@ -49,7 +49,7 @@ h2 {
 
 h3 {
     font-size: 1.2em;
-    margin-bottom: 0.1em;
+    margin-bottom: 0em;
     color: #2f3e46;
 
 }
@@ -110,7 +110,7 @@ li {
 }
 
 .taBortRecept:hover {
-    background-color: #555;
+    background-color: #c82333;
 }
 
 /* Slumpad maträtt */
