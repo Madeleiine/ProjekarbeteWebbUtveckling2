@@ -1,41 +1,162 @@
-
-css projekt body{
-    font-family:Arial, Helvetica, sans-serif;
+/* Grundläggande stil */
+body {
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
     line-height: 1.6;
+    color: #333;
+    background-color: #cad2c5;
 }
 
-header{
-    background-color: peachpuff;
-    color: black;
+header {
+    background-color: #84a98c;
+    color: #2f3e46;
     text-align: center;
-    padding:1em 0;
+    padding: 1em 0;
 }
 
-main{
-    padding: 20px;
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
 }
 
-button{
-    background-color: black;
-    color: peachpuff;
-    border: 1px  gray;
-    border-radius: 4px;
-    box-shadow: 2;
-    padding: 10px;
+header p {
+    margin: 0;
+    font-size: 1.2rem;
+}
+
+/* Huvudinnehåll */
+main {
+    max-width: 800px;
+    margin: 2em auto;
+    padding: 1em;
+    background: #84a98c;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+section {
+    margin-bottom: 2em;
+}
+
+h2 {
+    font-size: 1.8rem;
+    color: #2f3e46;
+    margin-bottom: 0.5em;
+    
+}
+
+h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.1em;
+    color: #2f3e46;
+
+}
+/* Formulär */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+
+label {
+    font-weight: bold;
+}
+
+input, textarea, button {
+    font-size: 1rem;
+    padding: 0.5em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #52796f;
+    color: rgb(251, 242, 242);
+    border-radius: 10px;
+    border: none;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-button:hover{
-    background-color:cadetblue;
+button:hover {
+    background-color: #21a07ed8;
 }
-    footer {
-        background-color: peachpuff;
-        color: black;
-        text-align: center;
-        padding: 10px 0;
-        position:  relative;
-        bottom: 0;
-        width: 100%;
+
+/* Lista över recept */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #f1f1f1;
+    margin: 0.5em 0;
+    padding: 1em;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.taBortRecept {
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    padding: 0.5em 1em;
+    margin-top: 0.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.taBortRecept:hover {
+    background-color: #c82333;
+}
+
+/* Slumpad maträtt */
+#slumpaMat {
+    font-size: 1.2rem;
+    color: #555;
+    margin-top: 1em;
+}
+
+/* Responsiv design */
+@media (max-width: 768px) {
+    body {
+        font-size: 90%;
     }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 0.8em;
+    }
+
+    button, input, textarea {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    header p {
+        font-size: 0.9rem;
+    }
+
+    button {
+        padding: 0.4em 0.8em;
+    }
+
+    li {
+        padding: 0.8em;
+    }
+}
