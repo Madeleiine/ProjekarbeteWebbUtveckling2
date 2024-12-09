@@ -11,6 +11,7 @@
     <header>
         <h1>Maträttsgenerator</h1>
         <p>Skapa egna recept och få nya ideér till middagen</p>
+    </header>
 
         <main>
             <section>
@@ -27,10 +28,16 @@
 
                     <label for="ingredienser">Ingredienser:</label>
                     <textarea id="ingredienser" required></textarea>
-                    <label for="instuktioner">Instruktioner:</label>
-                    <textarea id="instuktioner" required></textarea>
 
-                    <button type="submit" id="genereraMaträtt">Lägg till</button>
+                    <label for="instruktioner">Instruktioner:</label>
+                    <textarea id="instruktioner" required></textarea>
+                    
+                    <button type="submit">Lägg till</button>
+
+                    <!--<button type="submit" id="läggTillRecept">Lägg till</button>
+                           -->
+            
+        
                 </form>
             </section>
 
@@ -42,7 +49,7 @@
         <footer>
             <p>&copy; 2024 Maträttsgenerator </p>
         </footer>
-    </header>
+    
     <script src="script.js"></script>
 </body>
 </html>
